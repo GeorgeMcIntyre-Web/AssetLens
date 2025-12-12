@@ -1,0 +1,11 @@
+node_modules/
+
+# Build artifacts
+packages/*/dist/
+packages/*/.tsbuildinfo
+
+# Generated JSON schema output (generated via script)
+packages/*/json-schema/
+
+# Tooling caches
+.vite/

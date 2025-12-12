@@ -1,0 +1,30 @@
+{
+  "name": "@shared/schemas",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./json-schema/*": "./json-schema/*"
+  },
+  "files": [
+    "dist",
+    "src",
+    "json-schema"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "generate:json-schema": "tsx ./scripts/generate-json-schema.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "zod-to-json-schema": "^3.24.1"
+  }
+}
