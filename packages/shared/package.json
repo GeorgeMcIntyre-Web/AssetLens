@@ -1,0 +1,27 @@
+{
+  "name": "@assetlens/shared",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier -w .",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json",
+    "schema:build": "node ./scripts/build-jsonschema.mjs"
+  },
+  "dependencies": {
+    "zod": "3.23.8",
+    "zod-to-json-schema": "3.23.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.16.0",
+    "@types/node": "20.17.9",
+    "eslint": "9.16.0",
+    "globals": "15.14.0",
+    "prettier": "3.4.2",
+    "typescript": "5.7.2",
+    "typescript-eslint": "8.16.0",
+    "vitest": "2.1.8"
+  }
+}
