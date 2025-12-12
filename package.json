@@ -1,0 +1,17 @@
+{
+  "name": "assetlens",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "test": "pnpm -r test",
+    "dev": "bash ./scripts/dev.sh",
+    "dev:mock": "NEXT_PUBLIC_MOCK_MODE=true bash ./scripts/dev.sh"
+  }
+}

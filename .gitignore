@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+.next/
+dist/
+coverage/
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.env.local
+.DS_Store
+services/inference/data/jobs/
