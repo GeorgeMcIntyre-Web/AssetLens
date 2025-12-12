@@ -1,9 +1,11 @@
 pyproject.toml
 src/assetlens_inference/__init__.py
 src/assetlens_inference/main.py
+src/assetlens_inference/pipeline.py
 src/assetlens_inference.egg-info/PKG-INFO
 src/assetlens_inference.egg-info/SOURCES.txt
 src/assetlens_inference.egg-info/dependency_links.txt
 src/assetlens_inference.egg-info/requires.txt
 src/assetlens_inference.egg-info/top_level.txt
+tests/test_determinism_sample_data.py
 tests/test_smoke.py

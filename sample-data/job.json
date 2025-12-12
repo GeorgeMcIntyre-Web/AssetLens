@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "job-manifest/v1",
+  "traceId": "trace_sample_0001",
+  "pipeline": {
+    "engine": "assetlens-inference",
+    "model": "mock-detector-v1",
+    "scoreThresholdBps": 5000,
+    "nmsThresholdBps": 3000,
+    "maxDetectionsPerImage": 1,
+    "configHashAlgorithm": "sha256(canonical-json-v1(job.schemaVersion,pipeline,inputs))",
+    "seedAlgorithm": "sha256(traceId + ':' + configHash) -> uint64be"
+  },
+  "inputs": {
+    "renders": [
+      {
+        "file": "renders/render_0001.png",
+        "width": 128,
+        "height": 72
+      },
+      {
+        "file": "renders/render_0002.png",
+        "width": 128,
+        "height": 72
+      },
+      {
+        "file": "renders/render_0003.png",
+        "width": 128,
+        "height": 72
+      }
+    ]
+  }
+}

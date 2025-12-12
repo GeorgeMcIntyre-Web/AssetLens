@@ -1,0 +1,19 @@
+{
+  "configHash": "2d7dbf07fb5d4550c0fd25375bf6726eff77126d52955c46ed39013312178338",
+  "items": [
+    {
+      "count": 1,
+      "label": "bolt"
+    },
+    {
+      "count": 1,
+      "label": "nut"
+    },
+    {
+      "count": 1,
+      "label": "plate"
+    }
+  ],
+  "schemaVersion": "bom/v1",
+  "traceId": "trace_sample_0001"
+}

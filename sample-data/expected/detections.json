@@ -1,0 +1,65 @@
+{
+  "configHash": "2d7dbf07fb5d4550c0fd25375bf6726eff77126d52955c46ed39013312178338",
+  "renders": [
+    {
+      "detections": [
+        {
+          "box": {
+            "h": 22,
+            "w": 16,
+            "x": 17,
+            "y": 4
+          },
+          "id": "det-0001",
+          "label": "nut",
+          "scoreBps": 5243
+        }
+      ],
+      "file": "renders/render_0001.png",
+      "height": 72,
+      "imageSha256": "7d04cee8a7f3e201ee4ee70375b512f50da131a2e734d9a3ecdd2164e8e17f1f",
+      "width": 128
+    },
+    {
+      "detections": [
+        {
+          "box": {
+            "h": 17,
+            "w": 22,
+            "x": 53,
+            "y": 42
+          },
+          "id": "det-0002",
+          "label": "plate",
+          "scoreBps": 5110
+        }
+      ],
+      "file": "renders/render_0002.png",
+      "height": 72,
+      "imageSha256": "35fa84cf936ed7f6da8a8edc4c90250fc5270ca9c32fb3357b04449555f5e5d7",
+      "width": 128
+    },
+    {
+      "detections": [
+        {
+          "box": {
+            "h": 18,
+            "w": 10,
+            "x": 36,
+            "y": 15
+          },
+          "id": "det-0003",
+          "label": "bolt",
+          "scoreBps": 5248
+        }
+      ],
+      "file": "renders/render_0003.png",
+      "height": 72,
+      "imageSha256": "900f64d00af8cfa2726a4822e9ee95173cd7466be5a119d2dc8fe5ab761a8ba1",
+      "width": 128
+    }
+  ],
+  "schemaVersion": "detections/v1",
+  "seed": 11663138779907079293,
+  "traceId": "trace_sample_0001"
+}
