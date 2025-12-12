@@ -1,0 +1,21 @@
+services:
+  api:
+    build:
+      context: ./apps/api
+    environment:
+      - DATA_DIR=/data
+    volumes:
+      - ./data:/data
+    ports:
+      - "8000:8000"
+
+  web:
+    build:
+      context: ./apps/web
+    environment:
+      - API_BASE_URL=http://api:8000
+      - NEXT_PUBLIC_MOCK_MODE=false
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
