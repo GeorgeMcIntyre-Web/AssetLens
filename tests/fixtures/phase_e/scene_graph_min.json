@@ -1,0 +1,31 @@
+{
+  "roots": ["rootA"],
+  "nodes": [
+    {
+      "name": "rootA",
+      "parent": null,
+      "children": ["clamp_left", "clamp_right"]
+    },
+    {
+      "name": "clamp_left",
+      "parent": "rootA",
+      "children": ["bolt_1"]
+    },
+    {
+      "name": "bolt_1",
+      "parent": "clamp_left",
+      "children": []
+    },
+    {
+      "name": "clamp_right",
+      "parent": "rootA",
+      "children": ["bolt_2"]
+    },
+    {
+      "name": "bolt_2",
+      "parent": "clamp_right",
+      "children": []
+    }
+  ]
+}
+

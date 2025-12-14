@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assetlens-core"
+version = "0.2.0"
+description = "AssetLens Core PoC++ (deterministic 2D pipeline + eval)."
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.6",
+  "PyYAML>=6.0",
+  "typer>=0.12",
+  "numpy>=1.26",
+  "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+assetlens2d = "assetlens_core.config.cli:app"
+assetlens3d = "assetlens_core.cli_3d:app"
+
+[tool.setuptools.packages.find]
+include = ["assetlens_core*"]
+exclude = ["poc_data*", "tests*", "scripts*", ".github*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

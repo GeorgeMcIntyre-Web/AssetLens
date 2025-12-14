@@ -1,0 +1,16 @@
+seed: 123
+run_id:
+output_dir: outputs
+dataset_dir: poc_data/3d_cells
+model_glob: models/*.obj
+labels_path: poc_data/3d_cells/labels_3d.json
+
+fake_runner:
+  enabled: true
+  max_instances_per_part: 2
+
+include_parts:
+  - base
+  - arm
+  - tool
+

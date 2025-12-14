@@ -1,0 +1,24 @@
+seed: 123
+run_id:
+output_dir: outputs
+dataset_dir: poc_data/2d_cells
+image_glob: images/*.png
+labels_path: poc_data/2d_cells/labels_2d.json
+
+thresholds:
+  min_confidence: 0.40
+  min_mask_area_ratio: 0.02
+
+fake_runner:
+  enabled: true
+  max_instances_per_prompt: 3
+  mask_width: 64
+  mask_height: 64
+
+include_classes:
+  - robots
+  - grippers
+  - fixtures
+  - safety_fence_panels
+  - light_curtains
+  - other
